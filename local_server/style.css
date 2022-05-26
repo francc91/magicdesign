@@ -1,0 +1,270 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vk;
+}
+
+/** Generales**/
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6;
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+h1 {
+    font-size: 2.2rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+}
+h4 {
+    font-size: 1.4rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/**Utilidades**/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+/**Header**/
+.header {
+    background-image: url(img/headerimg.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header_texto {
+    text-align: center;
+    color: white;
+    margin-top: 10rem;
+}
+a:hover {
+    color: brown;
+}
+/*.header ul {
+    list-style: none; Esto lo pongo dentro del media pq si lo dejo afuera, el menu se pone en linea
+    display: flex;
+}*/
+.barra li {
+    padding: 4px;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .barra ul {
+        display: flex;
+    }
+}
+.header a{
+    color: black;
+}
+.logo {
+    color: white;
+}
+.logo_nombre {
+    font-weight: 400;
+}
+.logo_bold {
+    font-weight: 700;
+}
+
+@media(min-width: 768px){
+    .navegacion {
+        display: flex;
+        gap: 20px;
+    }
+}
+.navegacion_enlace {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+@media (min-width: 768px){
+    .entrada{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 768px){
+    .entrada{
+        display: flex;
+        float: right;
+    }
+}
+.entrada_imagen {
+    margin-right: 2rem;
+}
+@media (min-width: 768px){
+    .entrada_imagen {
+
+        margin-right: 2rem;
+    }
+}
+@media (min-width: 768px){
+    .contenido_entrada {
+        float: right;
+    }
+}
+.entrada {
+    border-bottom: 1px solid gray;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+}
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0px;
+}
+footer {
+    background-color: black;
+    padding: 2px 0;
+    margin-top: auto;
+}
+
+/**Pagina Nosotros**/
+@media (min-width: 768px){
+    .sobre-nosotros {
+        display: flex;
+        gap: 10px;
+    }
+    .sobre-nosotros_imagen,
+    .sobre-nosotros_texto{
+        width: 50%;
+        
+    }
+    /**.sobre-nosotros{ Estas lineas que estan marcadas como comentarios hacen exactamente lo mismo que las de arriba, pero con GRID
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+    }**/  
+}
+.sobre-nosotros_imagen {
+    margin-right: 2rem;
+}
+/**PAgina de contacto**/
+.contacto-img {
+    background-image:url(img/imagencontacto.jpg) ;
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario {
+    background-color: white;
+    margin: -25rem 0 0 0;
+    width: 95%;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.campo_label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo_field {
+    flex: 1;
+    border: 1px solid gray;
+}
+.campo_field-textarea {
+    height: 20rem;
+}
+
+.boton {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color:black ;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+    transition-property: background-color;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block
+        
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: orangered;
+}
+
+/**Pagina Nosotros**/
+@media (min-width: 768px){
+    .contacto {
+        display: flex;
+        gap: 10px;
+    }
+}
+iframe {
+    width: 100%;
+    height: auto;
+    border: 1px solid grey;
+    margin-bottom: 2rem;
+}
+/** Iconos Nosotros **/
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+}
+.icono {
+    text-align: center;
+}
+.icono img {
+    height: 10rem;
+}
